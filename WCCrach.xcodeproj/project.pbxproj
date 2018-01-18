@@ -1,0 +1,838 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		853782EA1FB866A200D81417 /* MethodTraceConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 853782E91FB866A200D81417 /* MethodTraceConfig.plist */; };
+		853782ED1FB866A200D81417 /* put ipa or app here in Resources */ = {isa = PBXBuildFile; fileRef = 853782EC1FB866A200D81417 /* put ipa or app here */; };
+		853782F51FB866A200D81417 /* libWCCrachDylib.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 853782F41FB866A200D81417 /* libWCCrachDylib.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		853782FA1FB866A200D81417 /* Cycript.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 853782F91FB866A200D81417 /* Cycript.framework */; };
+		853782FC1FB866A200D81417 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 853782FB1FB866A200D81417 /* JavaScriptCore.framework */; };
+		853782FE1FB866A200D81417 /* RevealServer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 853782FD1FB866A200D81417 /* RevealServer.framework */; };
+		853783001FB866A200D81417 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 853782FF1FB866A200D81417 /* Foundation.framework */; };
+		853783021FB866A200D81417 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 853783011FB866A200D81417 /* UIKit.framework */; };
+		853783061FB866A200D81417 /* ANYMethodLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 853783051FB866A200D81417 /* ANYMethodLog.h */; };
+		853783081FB866A200D81417 /* ANYMethodLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 853783071FB866A200D81417 /* ANYMethodLog.m */; };
+		8537830A1FB866A200D81417 /* MethodTrace.h in Headers */ = {isa = PBXBuildFile; fileRef = 853783091FB866A200D81417 /* MethodTrace.h */; };
+		8537830C1FB866A200D81417 /* MethodTrace.m in Sources */ = {isa = PBXBuildFile; fileRef = 8537830B1FB866A200D81417 /* MethodTrace.m */; };
+		853783111FB866A200D81417 /* AntiAntiDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = 853783101FB866A200D81417 /* AntiAntiDebug.m */; };
+		853783141FB866A200D81417 /* fishhook.c in Sources */ = {isa = PBXBuildFile; fileRef = 853783131FB866A200D81417 /* fishhook.c */; };
+		853783161FB866A200D81417 /* fishhook.h in Headers */ = {isa = PBXBuildFile; fileRef = 853783151FB866A200D81417 /* fishhook.h */; };
+		853783191FB866A200D81417 /* WCCrachDylib.mm in Sources */ = {isa = PBXBuildFile; fileRef = 853783181FB866A200D81417 /* WCCrachDylib.mm */; };
+		8537831B1FB866A200D81417 /* WCCrachDylib.h in Headers */ = {isa = PBXBuildFile; fileRef = 8537831A1FB866A200D81417 /* WCCrachDylib.h */; };
+		8537831D1FB866A200D81417 /* WCCrachDylib.m in Sources */ = {isa = PBXBuildFile; fileRef = 8537831C1FB866A200D81417 /* WCCrachDylib.m */; };
+		857248E51FB8785800C384F2 /* HeaderForWeChat.h in Headers */ = {isa = PBXBuildFile; fileRef = 857248E41FB8785800C384F2 /* HeaderForWeChat.h */; };
+		857248E61FB879CF00C384F2 /* PLSendRedEnvelopParam.m in Sources */ = {isa = PBXBuildFile; fileRef = 857248B71FB8784D00C384F2 /* PLSendRedEnvelopParam.m */; };
+		857248E71FB879CF00C384F2 /* PLOpenRedEnvelopParamQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 857248B81FB8784D00C384F2 /* PLOpenRedEnvelopParamQueue.m */; };
+		857248E81FB879CF00C384F2 /* PLOpenRedEnvelopParam.m in Sources */ = {isa = PBXBuildFile; fileRef = 857248BB1FB8784D00C384F2 /* PLOpenRedEnvelopParam.m */; };
+		857248E91FB879CF00C384F2 /* PLOpenRedEnvelopOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 857248BD1FB8784D00C384F2 /* PLOpenRedEnvelopOperation.m */; };
+		857248EA1FB879CF00C384F2 /* PLSendRedEnvelopParamQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 857248BF1FB8784D00C384F2 /* PLSendRedEnvelopParamQueue.m */; };
+		857248EB1FB879CF00C384F2 /* PLSendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 857248C11FB8784D00C384F2 /* PLSendViewController.m */; };
+		857248EC1FB879CF00C384F2 /* PLSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 857248C21FB8784D00C384F2 /* PLSettingViewController.m */; };
+		857248ED1FB879CF00C384F2 /* KeepCalmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 857248C31FB8784D00C384F2 /* KeepCalmViewController.m */; };
+		857248EE1FB879CF00C384F2 /* PLSendRedEnvelopTaskManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 857248C71FB8784D00C384F2 /* PLSendRedEnvelopTaskManager.m */; };
+		857248EF1FB879CF00C384F2 /* PLRobViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 857248C81FB8784D00C384F2 /* PLRobViewController.m */; };
+		857248F01FB879CF00C384F2 /* PLMultiSelectGroupsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 857248CB1FB8784D00C384F2 /* PLMultiSelectGroupsViewController.m */; };
+		857248F11FB879CF00C384F2 /* PLMsgConfigureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 857248CC1FB8784D00C384F2 /* PLMsgConfigureViewController.m */; };
+		857248F21FB879CF00C384F2 /* PLConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 857248CE1FB8784D00C384F2 /* PLConfig.m */; };
+		857248F31FB879CF00C384F2 /* PLOpenRedEnvelopTaskManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 857248CF1FB8784D00C384F2 /* PLOpenRedEnvelopTaskManager.m */; };
+		857248F41FB879CF00C384F2 /* PLSendRedEnvelopOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 857248D31FB8784D00C384F2 /* PLSendRedEnvelopOperation.m */; };
+		857248FD1FB8AA4600C384F2 /* WeChatRedEnvelopeSend.m in Sources */ = {isa = PBXBuildFile; fileRef = 857248FC1FB8AA4600C384F2 /* WeChatRedEnvelopeSend.m */; };
+		857248FF1FB8ACDE00C384F2 /* WeChatRedEnvelopeRob.m in Sources */ = {isa = PBXBuildFile; fileRef = 857248FE1FB8ACDE00C384F2 /* WeChatRedEnvelopeRob.m */; };
+		857249011FB8ADF200C384F2 /* WeChatMessageRevoke.m in Sources */ = {isa = PBXBuildFile; fileRef = 857249001FB8ADF200C384F2 /* WeChatMessageRevoke.m */; };
+		857249031FB8AEAA00C384F2 /* WeChatStepNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 857249021FB8AEAA00C384F2 /* WeChatStepNumber.m */; };
+		857249051FB8AF3D00C384F2 /* WeChatMessageInterval.m in Sources */ = {isa = PBXBuildFile; fileRef = 857249041FB8AF3D00C384F2 /* WeChatMessageInterval.m */; };
+		857249071FB8AFE300C384F2 /* WeChatWebEmotion.m in Sources */ = {isa = PBXBuildFile; fileRef = 857249061FB8AFE300C384F2 /* WeChatWebEmotion.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		853782F61FB866A200D81417 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 853782DB1FB866A200D81417 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 853782F31FB866A200D81417;
+			remoteInfo = WCCrachDylib;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		853782E31FB866A200D81417 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				853782F51FB866A200D81417 /* libWCCrachDylib.dylib in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		853782E61FB866A200D81417 /* WCCrach.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WCCrach.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		853782E91FB866A200D81417 /* MethodTraceConfig.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = MethodTraceConfig.plist; sourceTree = "<group>"; };
+		853782EC1FB866A200D81417 /* put ipa or app here */ = {isa = PBXFileReference; lastKnownFileType = text; name = "put ipa or app here"; path = "TargetApp/put ipa or app here"; sourceTree = "<group>"; };
+		853782EE1FB866A200D81417 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		853782F41FB866A200D81417 /* libWCCrachDylib.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libWCCrachDylib.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		853782F91FB866A200D81417 /* Cycript.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cycript.framework; path = Library/Frameworks/Cycript.framework; sourceTree = DEVELOPER_DIR; };
+		853782FB1FB866A200D81417 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		853782FD1FB866A200D81417 /* RevealServer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RevealServer.framework; path = Library/Frameworks/RevealServer.framework; sourceTree = DEVELOPER_DIR; };
+		853782FF1FB866A200D81417 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		853783011FB866A200D81417 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		853783051FB866A200D81417 /* ANYMethodLog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ANYMethodLog.h; path = MethodTrace/ANYMethodLog.h; sourceTree = "<group>"; };
+		853783071FB866A200D81417 /* ANYMethodLog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ANYMethodLog.m; path = MethodTrace/ANYMethodLog.m; sourceTree = "<group>"; };
+		853783091FB866A200D81417 /* MethodTrace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MethodTrace.h; path = MethodTrace/MethodTrace.h; sourceTree = "<group>"; };
+		8537830B1FB866A200D81417 /* MethodTrace.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MethodTrace.m; path = MethodTrace/MethodTrace.m; sourceTree = "<group>"; };
+		8537830E1FB866A200D81417 /* WCCrachDylib-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WCCrachDylib-Prefix.pch"; sourceTree = "<group>"; };
+		853783101FB866A200D81417 /* AntiAntiDebug.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AntiAntiDebug.m; path = AntiAntiDebug/AntiAntiDebug.m; sourceTree = "<group>"; };
+		853783131FB866A200D81417 /* fishhook.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = fishhook.c; path = fishhook/fishhook.c; sourceTree = "<group>"; };
+		853783151FB866A200D81417 /* fishhook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = fishhook.h; path = fishhook/fishhook.h; sourceTree = "<group>"; };
+		853783171FB866A200D81417 /* WCCrachDylib.xm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = WCCrachDylib.xm; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		853783181FB866A200D81417 /* WCCrachDylib.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = WCCrachDylib.mm; sourceTree = "<group>"; };
+		8537831A1FB866A200D81417 /* WCCrachDylib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WCCrachDylib.h; sourceTree = "<group>"; };
+		8537831C1FB866A200D81417 /* WCCrachDylib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WCCrachDylib.m; sourceTree = "<group>"; };
+		857248B71FB8784D00C384F2 /* PLSendRedEnvelopParam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLSendRedEnvelopParam.m; sourceTree = "<group>"; };
+		857248B81FB8784D00C384F2 /* PLOpenRedEnvelopParamQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLOpenRedEnvelopParamQueue.m; sourceTree = "<group>"; };
+		857248B91FB8784D00C384F2 /* PLRobViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLRobViewController.h; sourceTree = "<group>"; };
+		857248BA1FB8784D00C384F2 /* PLSendRedEnvelopTaskManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLSendRedEnvelopTaskManager.h; sourceTree = "<group>"; };
+		857248BB1FB8784D00C384F2 /* PLOpenRedEnvelopParam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLOpenRedEnvelopParam.m; sourceTree = "<group>"; };
+		857248BC1FB8784D00C384F2 /* PLMsgConfigureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLMsgConfigureViewController.h; sourceTree = "<group>"; };
+		857248BD1FB8784D00C384F2 /* PLOpenRedEnvelopOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLOpenRedEnvelopOperation.m; sourceTree = "<group>"; };
+		857248BE1FB8784D00C384F2 /* PLMultiSelectGroupsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLMultiSelectGroupsViewController.h; sourceTree = "<group>"; };
+		857248BF1FB8784D00C384F2 /* PLSendRedEnvelopParamQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLSendRedEnvelopParamQueue.m; sourceTree = "<group>"; };
+		857248C01FB8784D00C384F2 /* PLSendRedEnvelopOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLSendRedEnvelopOperation.h; sourceTree = "<group>"; };
+		857248C11FB8784D00C384F2 /* PLSendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLSendViewController.m; sourceTree = "<group>"; };
+		857248C21FB8784D00C384F2 /* PLSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLSettingViewController.m; sourceTree = "<group>"; };
+		857248C31FB8784D00C384F2 /* KeepCalmViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeepCalmViewController.m; sourceTree = "<group>"; };
+		857248C41FB8784D00C384F2 /* PLOpenRedEnvelopTaskManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLOpenRedEnvelopTaskManager.h; sourceTree = "<group>"; };
+		857248C51FB8784D00C384F2 /* PLConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLConfig.h; sourceTree = "<group>"; };
+		857248C61FB8784D00C384F2 /* PLSendRedEnvelopParam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLSendRedEnvelopParam.h; sourceTree = "<group>"; };
+		857248C71FB8784D00C384F2 /* PLSendRedEnvelopTaskManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLSendRedEnvelopTaskManager.m; sourceTree = "<group>"; };
+		857248C81FB8784D00C384F2 /* PLRobViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLRobViewController.m; sourceTree = "<group>"; };
+		857248C91FB8784D00C384F2 /* PLOpenRedEnvelopParamQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLOpenRedEnvelopParamQueue.h; sourceTree = "<group>"; };
+		857248CA1FB8784D00C384F2 /* PLOpenRedEnvelopOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLOpenRedEnvelopOperation.h; sourceTree = "<group>"; };
+		857248CB1FB8784D00C384F2 /* PLMultiSelectGroupsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLMultiSelectGroupsViewController.m; sourceTree = "<group>"; };
+		857248CC1FB8784D00C384F2 /* PLMsgConfigureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLMsgConfigureViewController.m; sourceTree = "<group>"; };
+		857248CD1FB8784D00C384F2 /* PLOpenRedEnvelopParam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLOpenRedEnvelopParam.h; sourceTree = "<group>"; };
+		857248CE1FB8784D00C384F2 /* PLConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLConfig.m; sourceTree = "<group>"; };
+		857248CF1FB8784D00C384F2 /* PLOpenRedEnvelopTaskManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLOpenRedEnvelopTaskManager.m; sourceTree = "<group>"; };
+		857248D01FB8784D00C384F2 /* PLSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLSettingViewController.h; sourceTree = "<group>"; };
+		857248D11FB8784D00C384F2 /* KeepCalmViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeepCalmViewController.h; sourceTree = "<group>"; };
+		857248D21FB8784D00C384F2 /* PLSendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLSendViewController.h; sourceTree = "<group>"; };
+		857248D31FB8784D00C384F2 /* PLSendRedEnvelopOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLSendRedEnvelopOperation.m; sourceTree = "<group>"; };
+		857248D41FB8784D00C384F2 /* PLSendRedEnvelopParamQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLSendRedEnvelopParamQueue.h; sourceTree = "<group>"; };
+		857248E41FB8785800C384F2 /* HeaderForWeChat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeaderForWeChat.h; sourceTree = "<group>"; };
+		857248FC1FB8AA4600C384F2 /* WeChatRedEnvelopeSend.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeChatRedEnvelopeSend.m; sourceTree = "<group>"; };
+		857248FE1FB8ACDE00C384F2 /* WeChatRedEnvelopeRob.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeChatRedEnvelopeRob.m; sourceTree = "<group>"; };
+		857249001FB8ADF200C384F2 /* WeChatMessageRevoke.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeChatMessageRevoke.m; sourceTree = "<group>"; };
+		857249021FB8AEAA00C384F2 /* WeChatStepNumber.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeChatStepNumber.m; sourceTree = "<group>"; };
+		857249041FB8AF3D00C384F2 /* WeChatMessageInterval.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeChatMessageInterval.m; sourceTree = "<group>"; };
+		857249061FB8AFE300C384F2 /* WeChatWebEmotion.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeChatWebEmotion.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		853782E01FB866A200D81417 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		853782F11FB866A200D81417 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				853782FC1FB866A200D81417 /* JavaScriptCore.framework in Frameworks */,
+				853782FE1FB866A200D81417 /* RevealServer.framework in Frameworks */,
+				853782FA1FB866A200D81417 /* Cycript.framework in Frameworks */,
+				853783001FB866A200D81417 /* Foundation.framework in Frameworks */,
+				853783021FB866A200D81417 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		853782DA1FB866A200D81417 = {
+			isa = PBXGroup;
+			children = (
+				853782E81FB866A200D81417 /* WCCrach */,
+				853783031FB866A200D81417 /* WCCrachDylib */,
+				853782F81FB866A200D81417 /* Frameworks */,
+				853782E71FB866A200D81417 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		853782E71FB866A200D81417 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				853782E61FB866A200D81417 /* WCCrach.app */,
+				853782F41FB866A200D81417 /* libWCCrachDylib.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		853782E81FB866A200D81417 /* WCCrach */ = {
+			isa = PBXGroup;
+			children = (
+				853782E91FB866A200D81417 /* MethodTraceConfig.plist */,
+				853782EE1FB866A200D81417 /* Info.plist */,
+				853782EB1FB866A200D81417 /* TargetApp */,
+			);
+			path = WCCrach;
+			sourceTree = "<group>";
+		};
+		853782EB1FB866A200D81417 /* TargetApp */ = {
+			isa = PBXGroup;
+			children = (
+				853782EC1FB866A200D81417 /* put ipa or app here */,
+			);
+			name = TargetApp;
+			sourceTree = "<group>";
+		};
+		853782F81FB866A200D81417 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				853782F91FB866A200D81417 /* Cycript.framework */,
+				853782FB1FB866A200D81417 /* JavaScriptCore.framework */,
+				853782FD1FB866A200D81417 /* RevealServer.framework */,
+				853782FF1FB866A200D81417 /* Foundation.framework */,
+				853783011FB866A200D81417 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		853783031FB866A200D81417 /* WCCrachDylib */ = {
+			isa = PBXGroup;
+			children = (
+				857248F61FB8A89700C384F2 /* Hook */,
+				857248B61FB8784D00C384F2 /* Class */,
+				853783171FB866A200D81417 /* WCCrachDylib.xm */,
+				853783181FB866A200D81417 /* WCCrachDylib.mm */,
+				8537831A1FB866A200D81417 /* WCCrachDylib.h */,
+				8537831C1FB866A200D81417 /* WCCrachDylib.m */,
+				853783041FB866A200D81417 /* MethodTrace */,
+				8537830F1FB866A200D81417 /* AntiAntiDebug */,
+				853783121FB866A200D81417 /* fishhook */,
+				8537830D1FB866A200D81417 /* Supporting Files */,
+			);
+			path = WCCrachDylib;
+			sourceTree = "<group>";
+		};
+		853783041FB866A200D81417 /* MethodTrace */ = {
+			isa = PBXGroup;
+			children = (
+				853783051FB866A200D81417 /* ANYMethodLog.h */,
+				853783071FB866A200D81417 /* ANYMethodLog.m */,
+				853783091FB866A200D81417 /* MethodTrace.h */,
+				8537830B1FB866A200D81417 /* MethodTrace.m */,
+			);
+			name = MethodTrace;
+			sourceTree = "<group>";
+		};
+		8537830D1FB866A200D81417 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8537830E1FB866A200D81417 /* WCCrachDylib-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8537830F1FB866A200D81417 /* AntiAntiDebug */ = {
+			isa = PBXGroup;
+			children = (
+				853783101FB866A200D81417 /* AntiAntiDebug.m */,
+			);
+			name = AntiAntiDebug;
+			sourceTree = "<group>";
+		};
+		853783121FB866A200D81417 /* fishhook */ = {
+			isa = PBXGroup;
+			children = (
+				853783131FB866A200D81417 /* fishhook.c */,
+				853783151FB866A200D81417 /* fishhook.h */,
+			);
+			name = fishhook;
+			sourceTree = "<group>";
+		};
+		857248B61FB8784D00C384F2 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				857248E41FB8785800C384F2 /* HeaderForWeChat.h */,
+				857248B71FB8784D00C384F2 /* PLSendRedEnvelopParam.m */,
+				857248B81FB8784D00C384F2 /* PLOpenRedEnvelopParamQueue.m */,
+				857248B91FB8784D00C384F2 /* PLRobViewController.h */,
+				857248BA1FB8784D00C384F2 /* PLSendRedEnvelopTaskManager.h */,
+				857248BB1FB8784D00C384F2 /* PLOpenRedEnvelopParam.m */,
+				857248BC1FB8784D00C384F2 /* PLMsgConfigureViewController.h */,
+				857248BD1FB8784D00C384F2 /* PLOpenRedEnvelopOperation.m */,
+				857248BE1FB8784D00C384F2 /* PLMultiSelectGroupsViewController.h */,
+				857248BF1FB8784D00C384F2 /* PLSendRedEnvelopParamQueue.m */,
+				857248C01FB8784D00C384F2 /* PLSendRedEnvelopOperation.h */,
+				857248C11FB8784D00C384F2 /* PLSendViewController.m */,
+				857248C21FB8784D00C384F2 /* PLSettingViewController.m */,
+				857248C31FB8784D00C384F2 /* KeepCalmViewController.m */,
+				857248C41FB8784D00C384F2 /* PLOpenRedEnvelopTaskManager.h */,
+				857248C51FB8784D00C384F2 /* PLConfig.h */,
+				857248C61FB8784D00C384F2 /* PLSendRedEnvelopParam.h */,
+				857248C71FB8784D00C384F2 /* PLSendRedEnvelopTaskManager.m */,
+				857248C81FB8784D00C384F2 /* PLRobViewController.m */,
+				857248C91FB8784D00C384F2 /* PLOpenRedEnvelopParamQueue.h */,
+				857248CA1FB8784D00C384F2 /* PLOpenRedEnvelopOperation.h */,
+				857248CB1FB8784D00C384F2 /* PLMultiSelectGroupsViewController.m */,
+				857248CC1FB8784D00C384F2 /* PLMsgConfigureViewController.m */,
+				857248CD1FB8784D00C384F2 /* PLOpenRedEnvelopParam.h */,
+				857248CE1FB8784D00C384F2 /* PLConfig.m */,
+				857248CF1FB8784D00C384F2 /* PLOpenRedEnvelopTaskManager.m */,
+				857248D01FB8784D00C384F2 /* PLSettingViewController.h */,
+				857248D11FB8784D00C384F2 /* KeepCalmViewController.h */,
+				857248D21FB8784D00C384F2 /* PLSendViewController.h */,
+				857248D31FB8784D00C384F2 /* PLSendRedEnvelopOperation.m */,
+				857248D41FB8784D00C384F2 /* PLSendRedEnvelopParamQueue.h */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		857248F61FB8A89700C384F2 /* Hook */ = {
+			isa = PBXGroup;
+			children = (
+				857248FB1FB8A97900C384F2 /* Step */,
+				857248FA1FB8A96A00C384F2 /* Emotion */,
+				857248F91FB8A94800C384F2 /* Message */,
+				857248F81FB8A93300C384F2 /* Rob */,
+				857248F71FB8A92700C384F2 /* Send */,
+			);
+			path = Hook;
+			sourceTree = "<group>";
+		};
+		857248F71FB8A92700C384F2 /* Send */ = {
+			isa = PBXGroup;
+			children = (
+				857248FC1FB8AA4600C384F2 /* WeChatRedEnvelopeSend.m */,
+			);
+			path = Send;
+			sourceTree = "<group>";
+		};
+		857248F81FB8A93300C384F2 /* Rob */ = {
+			isa = PBXGroup;
+			children = (
+				857248FE1FB8ACDE00C384F2 /* WeChatRedEnvelopeRob.m */,
+			);
+			path = Rob;
+			sourceTree = "<group>";
+		};
+		857248F91FB8A94800C384F2 /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				857249001FB8ADF200C384F2 /* WeChatMessageRevoke.m */,
+				857249041FB8AF3D00C384F2 /* WeChatMessageInterval.m */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		857248FA1FB8A96A00C384F2 /* Emotion */ = {
+			isa = PBXGroup;
+			children = (
+				857249061FB8AFE300C384F2 /* WeChatWebEmotion.m */,
+			);
+			path = Emotion;
+			sourceTree = "<group>";
+		};
+		857248FB1FB8A97900C384F2 /* Step */ = {
+			isa = PBXGroup;
+			children = (
+				857249021FB8AEAA00C384F2 /* WeChatStepNumber.m */,
+			);
+			path = Step;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		853782F21FB866A200D81417 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				853783061FB866A200D81417 /* ANYMethodLog.h in Headers */,
+				8537830A1FB866A200D81417 /* MethodTrace.h in Headers */,
+				853783161FB866A200D81417 /* fishhook.h in Headers */,
+				8537831B1FB866A200D81417 /* WCCrachDylib.h in Headers */,
+				857248E51FB8785800C384F2 /* HeaderForWeChat.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		853782E51FB866A200D81417 /* WCCrach */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 853783231FB866A200D81417 /* Build configuration list for PBXNativeTarget "WCCrach" */;
+			buildPhases = (
+				853782DF1FB866A200D81417 /* Sources */,
+				853782E01FB866A200D81417 /* Frameworks */,
+				853782E11FB866A200D81417 /* ShellScript */,
+				853782E21FB866A200D81417 /* Resources */,
+				853782E31FB866A200D81417 /* CopyFiles */,
+				853782E41FB866A200D81417 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				853782F71FB866A200D81417 /* PBXTargetDependency */,
+			);
+			name = WCCrach;
+			productName = WCCrach;
+			productReference = 853782E61FB866A200D81417 /* WCCrach.app */;
+			productType = "com.apple.product-type.application";
+		};
+		853782F31FB866A200D81417 /* WCCrachDylib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 853783201FB866A200D81417 /* Build configuration list for PBXNativeTarget "WCCrachDylib" */;
+			buildPhases = (
+				853782EF1FB866A200D81417 /* ShellScript */,
+				853782F01FB866A200D81417 /* Sources */,
+				853782F11FB866A200D81417 /* Frameworks */,
+				853782F21FB866A200D81417 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WCCrachDylib;
+			productName = WCCrachDylib;
+			productReference = 853782F41FB866A200D81417 /* libWCCrachDylib.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		853782DB1FB866A200D81417 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = ZongzhuHe;
+				TargetAttributes = {
+					853782E51FB866A200D81417 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					853782F31FB866A200D81417 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 853782DE1FB866A200D81417 /* Build configuration list for PBXProject "WCCrach" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 853782DA1FB866A200D81417;
+			productRefGroup = 853782E71FB866A200D81417 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				853782E51FB866A200D81417 /* WCCrach */,
+				853782F31FB866A200D81417 /* WCCrachDylib */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		853782E21FB866A200D81417 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				853782ED1FB866A200D81417 /* put ipa or app here in Resources */,
+				853782EA1FB866A200D81417 /* MethodTraceConfig.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		853782E11FB866A200D81417 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = /opt/MonkeyDev/Tools/pack.sh;
+		};
+		853782E41FB866A200D81417 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/MonkeyDev/Tools/pack.sh codesign";
+		};
+		853782EF1FB866A200D81417 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/MonkeyDev/bin/md --xcbp-logos";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		853782DF1FB866A200D81417 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		853782F01FB866A200D81417 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				853783111FB866A200D81417 /* AntiAntiDebug.m in Sources */,
+				857248F01FB879CF00C384F2 /* PLMultiSelectGroupsViewController.m in Sources */,
+				857248EC1FB879CF00C384F2 /* PLSettingViewController.m in Sources */,
+				857248E81FB879CF00C384F2 /* PLOpenRedEnvelopParam.m in Sources */,
+				857248E61FB879CF00C384F2 /* PLSendRedEnvelopParam.m in Sources */,
+				857248F11FB879CF00C384F2 /* PLMsgConfigureViewController.m in Sources */,
+				857249051FB8AF3D00C384F2 /* WeChatMessageInterval.m in Sources */,
+				8537830C1FB866A200D81417 /* MethodTrace.m in Sources */,
+				857248EA1FB879CF00C384F2 /* PLSendRedEnvelopParamQueue.m in Sources */,
+				857249031FB8AEAA00C384F2 /* WeChatStepNumber.m in Sources */,
+				857248F21FB879CF00C384F2 /* PLConfig.m in Sources */,
+				857248FD1FB8AA4600C384F2 /* WeChatRedEnvelopeSend.m in Sources */,
+				857248F41FB879CF00C384F2 /* PLSendRedEnvelopOperation.m in Sources */,
+				853783141FB866A200D81417 /* fishhook.c in Sources */,
+				853783191FB866A200D81417 /* WCCrachDylib.mm in Sources */,
+				857248FF1FB8ACDE00C384F2 /* WeChatRedEnvelopeRob.m in Sources */,
+				857248ED1FB879CF00C384F2 /* KeepCalmViewController.m in Sources */,
+				8537831D1FB866A200D81417 /* WCCrachDylib.m in Sources */,
+				853783081FB866A200D81417 /* ANYMethodLog.m in Sources */,
+				857248EE1FB879CF00C384F2 /* PLSendRedEnvelopTaskManager.m in Sources */,
+				857248E71FB879CF00C384F2 /* PLOpenRedEnvelopParamQueue.m in Sources */,
+				857248F31FB879CF00C384F2 /* PLOpenRedEnvelopTaskManager.m in Sources */,
+				857248EB1FB879CF00C384F2 /* PLSendViewController.m in Sources */,
+				857249071FB8AFE300C384F2 /* WeChatWebEmotion.m in Sources */,
+				857249011FB8ADF200C384F2 /* WeChatMessageRevoke.m in Sources */,
+				857248EF1FB879CF00C384F2 /* PLRobViewController.m in Sources */,
+				857248E91FB879CF00C384F2 /* PLOpenRedEnvelopOperation.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		853782F71FB866A200D81417 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 853782F31FB866A200D81417 /* WCCrachDylib */;
+			targetProxy = 853782F61FB866A200D81417 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		8537831E1FB866A200D81417 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8537831F1FB866A200D81417 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		853783211FB866A200D81417 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DUK7Y8NUU7;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks/**",
+					"$(MonkeyDevPath)/Librarys/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WCCrachDylib/WCCrachDylib-Prefix.pch";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/include",
+					"$(MonkeyDevTheosPath)/vendor/include/**",
+				);
+				INSTALL_PATH = "@executable_path/Frameworks/libWCCrachDylib.dylib";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks",
+					"$(MonkeyDevTheosPath)/vendor/lib/**",
+				);
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-DTHEOS_INSTANCE_NAME=\"\\\"WCCrachDylib\\\"\"",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-weak_library",
+					"/usr/lib/libc++.dylib",
+					"-weak_library",
+					"/usr/lib/libstdc++.dylib",
+					"-lsubstrate",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+			};
+			name = Debug;
+		};
+		853783221FB866A200D81417 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = YES;
+				DEVELOPMENT_TEAM = DUK7Y8NUU7;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks/**",
+					"$(MonkeyDevPath)/Librarys/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WCCrachDylib/WCCrachDylib-Prefix.pch";
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/include",
+					"$(MonkeyDevTheosPath)/vendor/include/**",
+				);
+				INSTALL_PATH = "@executable_path/Frameworks/libWCCrachDylib.dylib";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks",
+					"$(MonkeyDevTheosPath)/vendor/lib/**",
+				);
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-DTHEOS_INSTANCE_NAME=\"\\\"WCCrachDylib\\\"\"",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-weak_library",
+					"/usr/lib/libc++.dylib",
+					"-weak_library",
+					"/usr/lib/libstdc++.dylib",
+					"-lsubstrate",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		853783241FB866A200D81417 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YS8U88T79C;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = WCCrach/Info.plist;
+				MONKEYDEV_CLASS_DUMP = YES;
+				MONKEYDEV_RESTORE_SYMBOL = YES;
+				PODS_CONFIGURATION_BUILD_DIR = "$BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				PODS_ROOT = "${SRCROOT}/Pods";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Majordomo.Application;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		853783251FB866A200D81417 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YS8U88T79C;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = WCCrach/Info.plist;
+				MONKEYDEV_CLASS_DUMP = YES;
+				MONKEYDEV_RESTORE_SYMBOL = YES;
+				PODS_CONFIGURATION_BUILD_DIR = "$BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				PODS_ROOT = "${SRCROOT}/Pods";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Majordomo.Application;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		853782DE1FB866A200D81417 /* Build configuration list for PBXProject "WCCrach" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8537831E1FB866A200D81417 /* Debug */,
+				8537831F1FB866A200D81417 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		853783201FB866A200D81417 /* Build configuration list for PBXNativeTarget "WCCrachDylib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				853783211FB866A200D81417 /* Debug */,
+				853783221FB866A200D81417 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		853783231FB866A200D81417 /* Build configuration list for PBXNativeTarget "WCCrach" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				853783241FB866A200D81417 /* Debug */,
+				853783251FB866A200D81417 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 853782DB1FB866A200D81417 /* Project object */;
+}
